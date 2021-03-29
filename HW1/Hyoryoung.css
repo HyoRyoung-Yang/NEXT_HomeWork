@@ -1,0 +1,52 @@
+* {
+    background-color: #ffffc8;    
+}
+body {
+    padding-bottom: 50px;
+
+}
+.header {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    width: 500px;
+    position: relative;
+    left: 660px;
+    
+}
+h1 {
+    width: 500px;
+    height: 70px;
+    border: 3px solid tomato;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 40px;
+    padding: auto;
+}
+h2 {
+    color: rgb(253, 174, 145);
+    font-family: 'Dancing Script', cursive;
+}
+span {
+    
+    position: relative;
+    left: 50px;
+    
+}
+.profile {
+    width: 700px;
+    border: 3px solid tomato;
+    position: relative;
+    left: 555px;
+    top: 50px;
+    margin: 0px 0px 50px 0px;
+
+}
+li {
+    font-size: 23px;
+    
+}
+
+img {
+    position: relative;
+    left: 505px;
+}

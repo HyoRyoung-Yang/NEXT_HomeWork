@@ -1,0 +1,81 @@
+* { 
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+.toss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 200px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.high {
+    margin: 0;
+    font-size: 52px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: -0.4px;
+    color: #454f5d;
+}
+.mid{
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.59;
+    letter-spacing: normal;
+    color: #454f5d;
+    margin-top: 38px;
+}
+.low {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.12px;
+    color: #3182f6;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 18px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 360px;
+    height: 70px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 0 30px 60px 12px rgb(0 0 33 / 5%), 0 4px 24px 0 rgb(0 0 33 / 5%), 0 0 1px 0 rgb(0 0 33 / 9%);
+}
+.bank {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.money {
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+img {
+    width: 28px;
+    margin-right: 20px;
+}
+
