@@ -1,0 +1,153 @@
+.facebook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    background-color: #dadde1;
+    color: black;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #576b95;
+    color: white;
+    height: 40px;
+    width: 100%;
+}
+.topser {
+    border-bottom: 1px solid white;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.peri {
+    margin: 0 10px 0 10px;
+}
+.top2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid #dadde1;
+    background-color: white;
+    width: 100%;
+
+}
+i {
+    font-size: 20px;
+    opacity: 0.5;
+    margin: 10px 20px 10px 20px;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    width: 100%;
+}
+.gum {
+    text-align: left;
+    border: 1px solid #dadde1;
+    border-radius: 20px;
+    width: 250px;
+    height: 30px;
+    padding: 7px 0 0 10px;
+    margin: 10px 15px 10px 15px;
+    font-size: 15px;
+}
+.story {
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.story_top {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.stry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.story_bot {
+    margin: 15px 5px 0 5px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.txt {
+    margin: 10px;
+}
+.txt1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.txt2 {
+    font-size: 12px;
+    opacity: 0.5;
+}
+.con {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.good {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+}
+.good1 {
+    margin-right: 170px;
+}
+.good2 {
+    margin: 5px;
+}
+.share {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    border-top: 1px solid #dadde1;
+    border-bottom: 1px solid #dadde1;
+    width: 100%;
+}
+.good3 {
+    margin: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.good4 {
+    margin-right: 150px;
+}
