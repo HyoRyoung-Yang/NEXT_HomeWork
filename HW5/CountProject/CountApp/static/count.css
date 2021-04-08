@@ -1,0 +1,39 @@
+
+h2 {
+    color: #912540;
+    text-align: center;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: white solid #b0c2cf;
+    background-color: #b0c2cf;
+    width: 50%;
+    border-radius: 30px;
+    padding: 50px;
+    position: relative;
+    left: 20%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea {
+    border: 2px solid white;
+    width: 400px;
+}
+.jun{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 50px;
+}

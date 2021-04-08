@@ -1,0 +1,20 @@
+p {
+    color: #912540;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: white solid #b0c2cf;
+    background-color: #b0c2cf;
+    width: 50%;
+    border-radius: 30px;
+    padding: 50px;
+    position: relative;
+    left: 20%;
+}
+p {
+    text-align: center;
+    font-weight: bold;
+}

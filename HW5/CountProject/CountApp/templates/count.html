@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'count.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <h2>글자를 입력해 보세요!</h2>
+        <form action="{% url 'result' %}" method="POST">{% csrf_token %}
+            <textarea name="text" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="제출">
+        </form>
+    
+        <div class="jun">
+            <img src="../static/최루피.jpg" style="width: 500px; height: auto;">
+            <a>커피 한 잔 <br>할래요...?</a>
+        </div>
+    </div>
+</body>
+</html>
