@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input name="title" placeholder="제목">
+        <br>
+        <textarea name="content" cols="30" rows="10" placeholder="내용"></textarea>
+        <br><button type="submit">저장하기</button>
+        <select name="category">
+            <optgroup>
+                <option name="movie">movie</option>
+                <option name="drama">drama</option>
+                <option name="programming">programming</option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="select">
+        카테고리:<br>
+        <div class="category"><a href="{% url 'movie' %}">영화</a> {{mn}}</div>
+        <div class="category"><a href="{% url 'drama' %}">드라마</a> {{dn}}</div>
+        <div class="category"><a href="{% url 'programming' %}">프로그래밍</a> {{pn}}</div>
+    </div>
+        
+    <form action="{% url 'new' %}" method="GET">
+        <button type="submit">글쓰러가기</button>
+    </form>
+</body>
+</html>

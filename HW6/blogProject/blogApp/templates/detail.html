@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>{{article.title}}</h2>
+    <p>내용: {{article.content}}</p>
+    <p>카테고리: {{article.category}}</p>
+    <a>{{article.a_time}}</a>
+    <br>
+    <a href="{% url 'index' %}">목록으로</a>
+    <br>
+    <a href="{% url 'new' %}">새글쓰러가기</a>
+</body>
+</html>
