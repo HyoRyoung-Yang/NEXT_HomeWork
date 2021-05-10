@@ -1,0 +1,48 @@
+.entire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: salmon;
+    width: 100%;
+    width: 50%;
+    background-color: black;
+    margin-left: 25%;
+    margin-top: 200px;
+}
+h1 {
+    font-size: 70px;
+    margin: 30px;
+    font-family: 'Itim', cursive;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 500px;
+    background-color: pink;
+    padding: 20px;
+}
+a {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 20px;
+    color: black;
+    text-decoration-line: none ;
+    font-weight: bold;
+}
+li {
+    cursor: pointer;
+    width: 500px;
+    margin: 10px;
+}
+.new {
+    width: 200px;
+    background-color: blanchedalmond;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+

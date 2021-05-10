@@ -1,0 +1,40 @@
+.entire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: salmon;
+    width: 50%;
+    background-color: black;
+    margin-left: 25%;
+    margin-top: 200px;
+    padding: 20px;
+}
+.li {
+    margin: 5px;
+    text-align: center;
+}
+label {
+    font-size: 20px;
+    font-weight: bold;    
+    height: 50px;
+}
+#title {
+    width: 300px;
+    height: 20px;
+    background-color: blanchedalmond;
+}
+#content {
+    width: 300px;
+    background-color: blanchedalmond;
+}
+#date {
+    width: 300px;
+    height: 20px;
+    background-color: blanchedalmond;
+}
+button {
+    background-color: salmon;
+    color: seashell;
+    margin: 10px;
+}

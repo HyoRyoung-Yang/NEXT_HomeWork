@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type ="text/css" href ="{% static 'home.css'%}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="entire">
+        <h1>To-Do-List</h1>
+        <div class="list">
+            {% for list in lists %}
+            <li>
+                <a href="{% url 'detail' list.pk %}">{{ list.title }} {{ list.date|timeuntil }}</a>
+            </li>
+            {% endfor %}
+            
+        </div>
+        <div class="new">
+            <a href="{% url 'new' %}">글 쓰러가기</a>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

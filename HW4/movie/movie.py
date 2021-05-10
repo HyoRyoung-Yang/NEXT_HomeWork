@@ -20,8 +20,6 @@ def data(movie_list):
 
         date = mid[0].text.replace('\n', '').replace('\t', '').replace('\r', '').split("|")[-1].replace("개봉", "")
 
-        print(">>:",date)
-        
         movie_info = {
             'title' : title,
             'star' : star,
