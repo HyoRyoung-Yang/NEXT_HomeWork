@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type ="text/css" href ="{% static 'detail.css'%}"/>
+{% endblock %}
+
+{% block entire %}
+    <div class="entire">
+        <div class="li">
+            <h2>제목</h2>
+            <p>{{ list.title }}</p>
+        </div>
+        <div class="li">
+            <h2>상세 내용</h2>
+            <p>{{ list.content }}</p>
+        </div>
+        <div class="li">
+            <h2>마감일</h2>
+            <p>{{ list.date }}</p>
+        </div>
+        <div class="tag">
+            <a href="{% url 'home' %}">홈으로</a>
+            <a href="{% url 'edit' list.pk %}">수정하기</a>
+            <a href="{% url 'delete' list.pk %}">삭제하기</a>
+        </div>
+        <hr style="border: solid 1px salmon; width: 70%;">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" id="com" name="content" placeholder="댓글을 입력해주세요">
+            <button id="com" type="submit">댓글 쓰기</button>
+        </form>
+
+        <div class="del">
+            {% for comment in list.comments.all %}
+            <li>{{ comment.content }}
+            <a href="{% url 'delete_comment' list.pk comment.pk %}">삭제</a></li>
+            {% endfor %}
+        </div>
+        
+    </div>
+{% endblock %}   

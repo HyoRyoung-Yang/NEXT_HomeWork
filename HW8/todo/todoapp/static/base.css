@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    width: 50%;
+    height: 70px;
+    margin-left: 25%;
+    margin-top: 150px;
+}
+#nav > a {
+    font-family: 'Goblin One', cursive;;
+    text-decoration-line: none ;
+    color: salmon;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 50px 0px 50px;
+}
