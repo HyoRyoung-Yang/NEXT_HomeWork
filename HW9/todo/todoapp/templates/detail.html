@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type ="text/css" href ="{% static 'detail.css'%}"/>
+{% endblock %}
+
+{% block entire %}
+        <div class="li">
+            <h2>제목</h2>
+            <p>{{ list.title }}</p>
+        </div>
+        <div class="li">
+            <h2>상세 내용</h2>
+            <p>{{ list.content }}</p>
+        </div>
+        <div class="li">
+            <h2>마감일</h2>
+            <p>{{ list.date }}</p>
+        </div>
+        <div class="li">
+            <h2>작성자</h2>
+            <p>{{ list.author }}</p>
+        </div>
+        <div class="tag">
+            <a href="{% url 'home' %}">홈으로</a>
+            {% if user.is_authenticated and list.author.pk == user.pk %}
+                <a href="{% url 'edit' list.pk %}">수정하기</a>
+                <a href="{% url 'delete' list.pk %}">삭제하기</a>
+            {% endif %}
+        </div>
+        <hr style="border: solid 1px salmon; width: 70%;">
+        
+        {% if user.is_authenticated %}
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" id="com" name="content" placeholder="댓글을 입력해주세요">
+            <button id="com" type="submit">댓글 쓰기</button>
+        </form>
+        {% endif %}
+
+        <div class="del">
+            {% for comment in list.comments.all %}
+            <li>{{ comment.content }} (작성자 : {{ comment.author.username }})
+            {% if user.is_authenticated and comment.author.pk == user.pk %}
+                <a href="{% url 'delete_comment' list.pk comment.pk %}">삭제</a></li>
+            {% endif %}
+            {% endfor %}
+        </div>
+        
+{% endblock %}   

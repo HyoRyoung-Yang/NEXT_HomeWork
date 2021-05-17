@@ -1,0 +1,56 @@
+.container {
+    background: linear-gradient(to bottom, lightpink, #fff1b5);
+    height: 1000px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff1b5;
+    width: 100%;
+    height: 70px;
+}
+#nav > a {
+    font-family: 'Goblin One', cursive;;
+    text-decoration-line: none ;
+    color: salmon;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 50px 0px 50px;
+}
+.entire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: salmon;
+    width: 50%;
+    background-color: black;
+    margin-left: 25%;
+    height: 900px;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff1b5;
+    width: 100%;
+    height: 70px;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff1b5;
+    width: 100%;
+    height: 70px;
+}
+.right > a {
+    text-decoration-line: none ;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 50px 0px 50px;
+}
